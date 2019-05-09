@@ -11,10 +11,11 @@ import android.view.ViewGroup;
 public class Stoppwatch_Fragment extends Fragment {
     View myView;
 
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.stoppwatch_layout,container,false);
+        myView = inflater.inflate(R.layout.stoppwatch_layout, container, false);
         return myView;
     }
 }
