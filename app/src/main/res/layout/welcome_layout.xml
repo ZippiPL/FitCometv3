@@ -5,8 +5,12 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD:app/src/main/res/layout/welcome_layout.xml
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
+=======
+    tools:context=".Welcome_Activity">
+>>>>>>> Alfa v1.05:app/src/main/res/layout/activity_welcome_activity.xml
 
     <ImageView
         android:layout_width="180dp"
@@ -74,7 +78,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="247dp" >
+        android:layout_marginTop="247dp">
 
         <RadioButton
             android:id="@+id/radioButton2"

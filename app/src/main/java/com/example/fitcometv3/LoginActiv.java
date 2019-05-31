@@ -114,6 +114,14 @@ public class LoginActiv extends AppCompatActivity implements TextWatcher,
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
+<<<<<<< HEAD
+=======
+                                Toast.makeText(LoginActiv.this, "Zalogowałeś się !", Toast.LENGTH_LONG).show();
+                                Intent intent = new Intent(LoginActiv.this, Welcome_Activity.class);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                startActivity(intent);
+                                // startActivity(new Intent(LoginActiv.this, MainActivity.class));
+>>>>>>> Alfa v1.05
 
                                 mDatabaseRef = FirebaseDatabase.getInstance().getReference().child("Users").child(mAuth.getCurrentUser().getUid());
 
