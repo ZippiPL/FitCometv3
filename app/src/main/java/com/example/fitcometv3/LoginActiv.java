@@ -121,6 +121,8 @@ public class LoginActiv extends AppCompatActivity implements TextWatcher,
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                         if(!dataSnapshot.child("isVerified").getValue().toString().equals("verified")){
+                                            Toast.makeText(LoginActiv.this, "Logujesz się po raz pierwszy", Toast.LENGTH_LONG).show();
+
                                             Intent intent = new Intent(LoginActiv.this, Welcome_Activity.class);
                                             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                             startActivity(intent);
